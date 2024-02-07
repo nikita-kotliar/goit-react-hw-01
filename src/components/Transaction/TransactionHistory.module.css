@@ -2,27 +2,27 @@ table {
   border-collapse: collapse; 
 }
 
-.transaction-head-item,
-.transaction-body-item {
+.transaction_head_item,
+.transaction_body_item {
   border: 2px solid black; 
   padding: 7px;
   width: 250px;
   text-align: center; 
 }
-.transaction-head-item {
+.transaction_head_item {
   background-color: #141414;
 }
 
-.transaction-body {
+.transaction_body {
   background-color: #f7f7f7;
   color: #000000;
 }
 
-.transaction-body-item:first-letter {
+.transaction_body_item:first-letter {
   text-transform: uppercase;
 }
 
-.transaction-body-item {
+.transaction_body_item {
   font-weight: 500;
 }
 

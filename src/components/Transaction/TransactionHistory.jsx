@@ -1,25 +1,24 @@
-import "../App.css";
-import "./TransactionHistory.css";
+import css from "./TransactionHistory.module.css";
 import { TransactionHistoryItem } from "./TransactionHistoryItem";
 import clsx from "clsx";
 
 export const TransactionHistory = (props) => {
-  const {items} = props;
+  const { items } = props;
 
   return (
-    <table className="transaction-history">
-      <thead className="transaction-main-head">
-        <tr className="transaction-head">
-          <th className="transaction-head-item">Type</th>
-          <th className="transaction-head-item">Amount</th>
-          <th className="transaction-head-item">Currency</th>
+    <table className={css.transaction_history}>
+      <thead className={css.transaction_main_head}>
+        <tr className={css.transaction_head}>
+          <th className={css.transaction_head_item}>Type</th>
+          <th className={css.transaction_head_item}>Amount</th>
+          <th className={css.transaction_head_item}>Currency</th>
         </tr>
       </thead>
 
-      <tbody className="transaction-main-body">
+      <tbody className={css.transaction_main_body}>
         {items.map((item, index) => (
           <tr
-            className={clsx("transaction-body", { color: index % 2 === 1 })}
+            className={clsx(css.transaction_body, { [css.color]: index % 2 === 1 })}
             key={item.id}
           >
             <TransactionHistoryItem transactions={item} />

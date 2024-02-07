@@ -5,6 +5,7 @@ import {userData} from "../userData.json";
 import {friends} from "../friends.json";
 import { transactions } from "../transactions.json";
 import { useState } from "react";
+import "./App.css";
 
 export const App = () => {
   const [page, setPage] = useState("Profile");

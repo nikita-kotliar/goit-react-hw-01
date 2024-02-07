@@ -1,27 +1,26 @@
-import "../App.css";
-import "./Profile.css";
+import css from "./Profile.module.css";
 
 export const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div className="profileCard">
-      <div className="main-card-div">
-        <img className="UserImage" src={image} alt="User avatar" />
-        <p className="name">{name}</p>
-        <p className="text">@{tag}</p>
-        <p className="text">{location}</p>
+    <div className={css.profileCard}>
+      <div className={css.main_card_div}>
+        <img className={css.UserImage} src={image} alt="User avatar" />
+        <p className={css.name}>{name}</p>
+        <p className={css.text}>@{tag}</p>
+        <p className={css.text}>{location}</p>
       </div>
-      <ul className="card-info-user">
-        <li className="card-info-li">
+      <ul className={css.card_info_user}>
+        <li className={css.card_info_li}>
           <span>Followers</span>
-          <span className="info">{stats.followers}</span>
+          <span className={css.info}>{stats.followers}</span>
         </li>
-        <li className="card-info-li">
+        <li className={css.card_info_li}>
           <span>Views</span>
-          <span className="info">{stats.views}</span>
+          <span className={css.info}>{stats.views}</span>
         </li>
-        <li className="card-info-li">
+        <li className={css.card_info_li}>
           <span>Likes</span>
-          <span className="info">{stats.likes}</span>
+          <span className={css.info}>{stats.likes}</span>
         </li>
       </ul>
     </div>

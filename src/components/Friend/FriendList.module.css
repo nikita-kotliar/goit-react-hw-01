@@ -1,4 +1,4 @@
-.friends-all-card {
+.friends_all_card {
   display: flex;
   gap: 40px;
   list-style: none;
@@ -15,11 +15,11 @@
   padding: 20px;
 }
 
-.friend-logo {
+.friend_logo {
   width: 100px;
 }
 
-.friend-name {
+.friend_name {
   color: #000000;
   font-size: 30px;
   font-weight: 500;
@@ -27,7 +27,7 @@
   text-align: center;
   margin-top: 20px;
 }
-.friend-orline {
+.friend_orline {
   font-size: 20px;
   font-weight: 500;
   width: 100%;
@@ -35,10 +35,10 @@
   color: #000000;
 }
 
-.friend-orline.online {
+.friend_orline.online {
   color: #059d19;
 }
 
-.friend-orline.offline {
+.friend_orline.offline {
   color: #fa1111;
 }

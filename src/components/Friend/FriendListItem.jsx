@@ -1,17 +1,15 @@
-import "../App.css";
-import "./FriendList.css";
+import css from "./FriendList.module.css";
+import clsx from "clsx";
 
 export const FriendListItem = (props) => {
   const item = props.friend;
   return (
     <>
-      <img className="friend-logo" src={item.avatar} alt="photo" />
-      <p className="friend-name">{item.name}</p>
-      {item.isOnline ? (
-        <p className="friend-orline online">Online</p>
-      ) : (
-        <p className="friend-orline offline">Offline</p>
-      )}
+      <img className={css.friend_logo} src={item.avatar} alt="photo" />
+      <p className={css.friend_name}>{item.name}</p>
+      <p className={clsx(css.friend_orline, { [css.online]: item.isOnline, [css.offline]: !item.isOnline })}>
+        {item.isOnline ? "Online" : "Offline"}
+      </p>
     </>
   );
 };
