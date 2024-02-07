@@ -1,0 +1,44 @@
+.friends-all-card {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.friend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fefefe;
+  border-radius: 20px;
+  border: 4px solid #000000;
+  padding: 20px;
+}
+
+.friend-logo {
+  width: 100px;
+}
+
+.friend-name {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.friend-orline {
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+}
+
+.friend-orline.online {
+  color: #059d19;
+}
+
+.friend-orline.offline {
+  color: #fa1111;
+}
