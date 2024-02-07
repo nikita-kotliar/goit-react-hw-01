@@ -3,7 +3,6 @@ import "./FriendList.css";
 
 export const FriendListItem = (props) => {
   const item = props.friend;
-  console.log(item);
   return (
     <>
       <img className="friend-logo" src={item.avatar} alt="photo" />
